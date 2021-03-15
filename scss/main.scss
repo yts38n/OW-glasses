@@ -1,0 +1,125 @@
+@import "cssReset";
+@import url(https://fonts.google.com/specimen/Roboto?query=roboto);
+@import url(https://fonts.google.com/specimen/Noto+Sans?query=san);
+
+/* color */
+$primary: #AA0601;
+$secondary: #650300;
+$light: #ffffff;
+$dark: #000000;
+$spacer: 8px;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* .fz {
+    &-xs {
+        font-size: 20px;
+        line-height: 1.4; //28px
+    }
+
+    &-sm {
+        font-size: 20px;
+        line-height: 1.5; //30px
+    }
+
+    &-md {
+        font-size: 24px;
+        line-height: 1.2; //28px
+    }
+
+    &-lg {
+        font-size: 24px;
+        line-height: 1.5; //36px
+    }
+}
+.h2 {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 700;
+} */
+
+.d-flex {
+    display: flex;
+}
+
+/*"to" does not include the last value, "through" does.*/
+@for $i from 1 through 8 {
+    .mb-#{$i} {
+        margin-bottom: $i*$spacer;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: $i*$spacer;
+    }
+}
+
+header {
+    background-color: $primary;
+    justify-content: space-between;
+    align-items: center;
+    height: 108px;
+    padding: 0 $spacer*7;
+
+    img {
+        padding: $spacer*4;
+    }
+}
+
+.header-nav {
+    a {
+        font-size: 20px;
+        line-height: 108px;
+        color: $light;
+        padding: 0 $spacer*4;
+    }
+}
+
+.banner {
+    height: 840px;
+    background-image: url("../img/banner.png");
+    background-size: cover;
+
+    div {
+        height: inherit;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    h1 {
+        font-size: 64px;
+        line-height: 1.5;
+        font-weight: bold;
+        color: $secondary;
+        text-align: right;
+
+        span {
+            font-size: 36px;
+            line-height: 1.5;
+        }
+    }
+}
