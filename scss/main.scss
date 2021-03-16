@@ -26,8 +26,37 @@ img {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1110px;
+    padding: 64px 0px 80px;
     margin: 0 auto;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: $secondary;
+    text-align: right;
+
+    span {
+        font-size: 36px;
+        line-height: 1.5;
+    }
+}
+
+.h2 {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: $spacer*7;
+}
+
+.h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* .fz {
@@ -51,20 +80,39 @@ img {
         line-height: 1.5; //36px
     }
 }
-.h2 {
-    font-size: 48px;
-    line-height: 1.5;
-    font-weight: bold;
-}
 
-.h3 {
-    font-size: 24px;
-    line-height: 1.5;
-    font-weight: 700;
-} */
+
+ */
 
 .d-flex {
     display: flex;
+}
+.fxw{
+    flex-wrap: wrap;
+}
+
+.jc {
+    &c {
+        justify-content: center;
+    }
+
+    &sb {
+        justify-content: space-between;
+    }
+
+    &fe {
+        justify-content: flex-end;
+    }
+}
+
+.ai {
+    &c {
+        align-items: center;
+    }
+
+    &b {
+        align-items: baseline;
+    }
 }
 
 /*"to" does not include the last value, "through" does.*/
@@ -80,8 +128,6 @@ img {
 
 header {
     background-color: $primary;
-    justify-content: space-between;
-    align-items: center;
     height: 108px;
     padding: 0 $spacer*7;
 
@@ -107,18 +153,39 @@ header {
     div {
         height: inherit;
         align-items: center;
-        justify-content: flex-end;
+    }
+}
+
+.intro {
+    color: $secondary;
+    background-color: #AA06010D;
+
+    p {
+        color: $dark;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
-    h1 {
-        font-size: 64px;
-        line-height: 1.5;
-        font-weight: bold;
-        color: $secondary;
-        text-align: right;
-
-        span {
-            font-size: 36px;
+    li {
+        flex-direction: column;
+        max-width: 20%;
+    }
+}
+.classic{
+    color: $secondary;
+    img{
+        max-width: 635px;
+    }
+    div{
+        color: $primary;
+        margin: 0px 30px;
+        img{
+            margin: 0px 8px;
+        }
+        p{
+            font-style: italic;
+            font-weight: bold;
+            font-size: 48px;
             line-height: 1.5;
         }
     }
