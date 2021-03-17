@@ -314,4 +314,12 @@ header img {
   font-size: 48px;
   line-height: 1.5;
 }
+
+.crossover {
+  height: 743px;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #ffffff;
+}
 /*# sourceMappingURL=main.css.map */
