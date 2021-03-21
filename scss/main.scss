@@ -37,11 +37,6 @@ h1 {
     font-weight: bold;
     color: $secondary;
     text-align: right;
-
-    span {
-        font-size: 36px;
-        line-height: 1.5;
-    }
 }
 
 .h2 {
@@ -59,25 +54,27 @@ h1 {
     text-align: center;
 }
 
-/* .fz {
-    &-xs {
-        font-size: 20px;
-        line-height: 1.4; //28px
-    }
-
+.h4 {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.fz{
     &-sm {
-        font-size: 20px;
-        line-height: 1.5; //30px
+        font-size: 14px;
+        line-height: 1.5; //21px
     }
 
     &-md {
-        font-size: 24px;
-        line-height: 1.2; //28px
+        font-size: 16px;
+        line-height: 1.5; //24px
     }
-
     &-lg {
-        font-size: 24px;
-        line-height: 1.5; //36px
+        font-size: 20px;
+        line-height: 1.5; //30px
+    }
+    &-xl {
+        font-size: 36px;
+        line-height: 1.5; //54px
     }
 }
 
@@ -87,7 +84,8 @@ h1 {
 .d-flex {
     display: flex;
 }
-.fxw{
+
+.fxw {
     flex-wrap: wrap;
 }
 
@@ -120,7 +118,9 @@ h1 {
     .mb-#{$i} {
         margin-bottom: $i*$spacer;
     }
-
+    .mr-#{$i} {
+        margin-right: $i*$spacer;
+    }
     .pb-#{$i} {
         padding-bottom: $i*$spacer;
     }
@@ -158,12 +158,10 @@ header {
 
 .intro {
     color: $secondary;
-    background-color: #AA06010D;
+    background-color: #fbf2f2;
 
     p {
         color: $dark;
-        font-size: 16px;
-        line-height: 1.5;
     }
 
     li {
@@ -171,18 +169,23 @@ header {
         max-width: 20%;
     }
 }
-.classic{
+
+.classic {
     color: $secondary;
-    img{
+
+    img {
         max-width: 635px;
     }
-    div{
+
+    div {
         color: $primary;
         margin: 0px 30px;
-        img{
+
+        img {
             margin: 0px 8px;
         }
-        p{
+
+        p {
             font-style: italic;
             font-weight: bold;
             font-size: 48px;
@@ -190,9 +193,141 @@ header {
         }
     }
 }
-.crossover{
-    height: 743px;
+
+.crossover {
     background-image: url("../img/bg.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    color: $light;}
+    background-position: center;
+    background-size: cover;
+    color: $light;
+
+    a {
+        width: 540px;
+        height: 472px;
+        position: relative;
+        background: #FFFFFF;
+
+
+        img {
+            max-width: 540px;
+            height: 472px;
+            opacity: 0.5;
+        }
+
+        p {
+            color: $primary;
+            font-size: 72px;
+            line-height: 1.5;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:hover {
+            background: #000;
+        }
+    }
+
+
+
+
+}
+
+.suggester {
+    color: $secondary;
+
+    li {
+        max-width: 23%;
+        color: $dark;
+        border: 1px solid #DEE2E6;
+    }
+}
+
+.suggester-inner {
+    padding: $spacer*2;
+
+    P {
+        color: #212529;
+    }
+
+    span {
+        color: #707070;
+    }
+}
+.opinion{
+    background-color: #fbf2f2;
+    .container{
+        padding: 64px 190px 80px;
+    }
+    .h2{
+        margin-bottom: $spacer*3;
+    }
+}
+.opinion-inner{
+    input{
+        width: 100%;
+        background-color: transparent;
+        padding: $spacer*2;
+        margin-bottom: $spacer*2;
+        border: 1px solid #000000;
+    }
+    textarea{
+        width: 100%;
+        height: 136px;
+        resize: none;
+        background-color: transparent;
+        padding: $spacer*2;
+        margin-bottom: $spacer*2;
+        border: 1px solid #000000;
+    }
+    .input-checkbox{
+        width:24px;
+    }
+    .submit{
+        padding: 0;
+    }
+    .btn-submit{
+        width: 350px;
+        background-color: $primary;
+        color: $light;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background-color: $secondary;
+        }
+    }
+}
+.footer{
+    background-color: $primary;
+    color: $light;
+}
+.container-footer{
+    max-width: 1110px;
+    padding-top: $spacer*5;
+    margin: 0 auto;
+}
+.nav-footer{
+    border-bottom: 1px solid $light;
+}
+.nav-footer-inner{
+    width: 40%;
+    a{
+        color: $light;
+        font-size: 16px;
+        line-height: 3;
+    }
+    img{
+        width: 44px;
+        height: 44px;
+    }
+}
+.social{
+    width: 20%;
+}
+.privacy{
+    padding: $spacer*3 0px;
+    
+}

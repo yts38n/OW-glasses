@@ -112,30 +112,11 @@ h1 span {
   text-align: center;
 }
 
-/* .fz {
-    &-xs {
-        font-size: 20px;
-        line-height: 1.4; //28px
-    }
-
-    &-sm {
-        font-size: 20px;
-        line-height: 1.5; //30px
-    }
-
-    &-md {
-        font-size: 24px;
-        line-height: 1.2; //28px
-    }
-
-    &-lg {
-        font-size: 24px;
-        line-height: 1.5; //36px
-    }
+.h4 {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-
- */
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,12 +163,20 @@ h1 span {
   margin-bottom: 8px;
 }
 
+.mr-1 {
+  margin-right: 8px;
+}
+
 .pb-1 {
   padding-bottom: 8px;
 }
 
 .mb-2 {
   margin-bottom: 16px;
+}
+
+.mr-2 {
+  margin-right: 16px;
 }
 
 .pb-2 {
@@ -198,12 +187,20 @@ h1 span {
   margin-bottom: 24px;
 }
 
+.mr-3 {
+  margin-right: 24px;
+}
+
 .pb-3 {
   padding-bottom: 24px;
 }
 
 .mb-4 {
   margin-bottom: 32px;
+}
+
+.mr-4 {
+  margin-right: 32px;
 }
 
 .pb-4 {
@@ -214,12 +211,20 @@ h1 span {
   margin-bottom: 40px;
 }
 
+.mr-5 {
+  margin-right: 40px;
+}
+
 .pb-5 {
   padding-bottom: 40px;
 }
 
 .mb-6 {
   margin-bottom: 48px;
+}
+
+.mr-6 {
+  margin-right: 48px;
 }
 
 .pb-6 {
@@ -230,12 +235,20 @@ h1 span {
   margin-bottom: 56px;
 }
 
+.mr-7 {
+  margin-right: 56px;
+}
+
 .pb-7 {
   padding-bottom: 56px;
 }
 
 .mb-8 {
   margin-bottom: 64px;
+}
+
+.mr-8 {
+  margin-right: 64px;
 }
 
 .pb-8 {
@@ -274,7 +287,7 @@ header img {
 
 .intro {
   color: #650300;
-  background-color: #AA06010D;
+  background-color: #fbf2f2;
 }
 
 .intro p {
@@ -316,10 +329,169 @@ header img {
 }
 
 .crossover {
-  height: 743px;
   background-image: url("../img/bg.png");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
+  background-size: cover;
   color: #ffffff;
+}
+
+.crossover a {
+  width: 540px;
+  height: 472px;
+  position: relative;
+  background: #FFFFFF;
+}
+
+.crossover a img {
+  max-width: 540px;
+  height: 472px;
+  opacity: 0.5;
+}
+
+.crossover a p {
+  color: #AA0601;
+  font-size: 72px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.crossover a:hover {
+  background: #000;
+}
+
+.suggester {
+  color: #650300;
+}
+
+.suggester li {
+  max-width: 23%;
+  color: #000000;
+  border: 1px solid #DEE2E6;
+}
+
+.suggester-inner {
+  padding: 16px;
+}
+
+.suggester-inner P {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212529;
+  margin-bottom: 8px;
+}
+
+.suggester-inner span {
+  color: #707070;
+}
+
+.opinion {
+  background-color: #fbf2f2;
+}
+
+.opinion .container {
+  padding: 64px 190px 80px;
+}
+
+.opinion .h2 {
+  margin-bottom: 24px;
+}
+
+.opinion p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.opinion-inner {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.opinion-inner input {
+  width: 100%;
+  background-color: transparent;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #000000;
+}
+
+.opinion-inner textarea {
+  width: 100%;
+  height: 136px;
+  resize: none;
+  background-color: transparent;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #000000;
+}
+
+.opinion-inner .input-checkbox {
+  width: 24px;
+}
+
+.opinion-inner .submit {
+  padding: 0;
+}
+
+.opinion-inner .btn-submit {
+  width: 350px;
+  background-color: #AA0601;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.opinion-inner .btn-submit:hover {
+  background-color: #650300;
+}
+
+.footer {
+  background-color: #AA0601;
+  color: #ffffff;
+}
+
+.container-footer {
+  max-width: 1110px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+
+.nav-footer {
+  border-bottom: 1px solid #ffffff;
+}
+
+.nav-footer-inner {
+  width: 40%;
+}
+
+.nav-footer-inner a {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 3;
+}
+
+.nav-footer-inner P {
+  font-size: 36px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.nav-footer-inner img {
+  width: 44px;
+  height: 44px;
+}
+
+.social {
+  width: 20%;
+}
+
+.privacy {
+  padding: 24px 0px;
 }
 /*# sourceMappingURL=main.css.map */
