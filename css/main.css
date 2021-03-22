@@ -54,12 +54,6 @@ table {
   border-spacing: 0;
 }
 
-/* Personal settings */
-a {
-  display: block;
-  text-decoration: none;
-}
-
 /* color */
 *,
 *::before,
@@ -78,6 +72,11 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .container {
   max-width: 1110px;
   padding: 64px 0px 80px;
@@ -90,11 +89,6 @@ h1 {
   font-weight: bold;
   color: #650300;
   text-align: right;
-}
-
-h1 span {
-  font-size: 36px;
-  line-height: 1.5;
 }
 
 .h2 {
@@ -114,6 +108,26 @@ h1 span {
 
 .h4 {
   font-size: 14px;
+  line-height: 1.5;
+}
+
+.fz-sm {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.fz-md {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.fz-lg {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.fz-xl {
+  font-size: 36px;
   line-height: 1.5;
 }
 
@@ -265,7 +279,7 @@ header img {
   padding: 32px;
 }
 
-.header-nav a {
+.nav-header a {
   font-size: 20px;
   line-height: 108px;
   color: #ffffff;
@@ -292,8 +306,6 @@ header img {
 
 .intro p {
   color: #000000;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .intro li {
@@ -381,10 +393,7 @@ header img {
 }
 
 .suggester-inner P {
-  font-size: 16px;
-  line-height: 1.5;
   color: #212529;
-  margin-bottom: 8px;
 }
 
 .suggester-inner span {
@@ -401,16 +410,6 @@ header img {
 
 .opinion .h2 {
   margin-bottom: 24px;
-}
-
-.opinion p {
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-.opinion-inner {
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .opinion-inner input {
@@ -451,15 +450,13 @@ header img {
   background-color: #650300;
 }
 
-.footer {
+.globalfooter {
   background-color: #AA0601;
   color: #ffffff;
 }
 
-.container-footer {
-  max-width: 1110px;
-  padding-top: 40px;
-  margin: 0 auto;
+.globalfooter .container {
+  padding: 32px 0 0;
 }
 
 .nav-footer {
@@ -471,15 +468,8 @@ header img {
 }
 
 .nav-footer-inner a {
-  color: #ffffff;
   font-size: 16px;
   line-height: 3;
-}
-
-.nav-footer-inner P {
-  font-size: 36px;
-  line-height: 1.5;
-  margin-bottom: 16px;
 }
 
 .nav-footer-inner img {
@@ -491,7 +481,7 @@ header img {
   width: 20%;
 }
 
-.privacy {
+.legal {
   padding: 24px 0px;
 }
 /*# sourceMappingURL=main.css.map */

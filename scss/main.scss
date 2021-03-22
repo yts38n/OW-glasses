@@ -24,7 +24,10 @@ img {
     height: auto;
     display: block;
 }
-
+a{
+    text-decoration: none;
+    color: $light;
+}
 .container {
     max-width: 1110px;
     padding: 64px 0px 80px;
@@ -77,9 +80,6 @@ h1 {
         line-height: 1.5; //54px
     }
 }
-
-
- */
 
 .d-flex {
     display: flex;
@@ -136,7 +136,7 @@ header {
     }
 }
 
-.header-nav {
+.nav-header {
     a {
         font-size: 20px;
         line-height: 108px;
@@ -207,7 +207,6 @@ header {
         position: relative;
         background: #FFFFFF;
 
-
         img {
             max-width: 540px;
             height: 472px;
@@ -230,10 +229,6 @@ header {
             background: #000;
         }
     }
-
-
-
-
 }
 
 .suggester {
@@ -300,22 +295,20 @@ header {
         }
     }
 }
-.footer{
+.globalfooter{
     background-color: $primary;
     color: $light;
+    .container{
+        padding: $spacer*4 0 0;
+    }
 }
-.container-footer{
-    max-width: 1110px;
-    padding-top: $spacer*5;
-    margin: 0 auto;
-}
+
 .nav-footer{
     border-bottom: 1px solid $light;
 }
 .nav-footer-inner{
     width: 40%;
     a{
-        color: $light;
         font-size: 16px;
         line-height: 3;
     }
@@ -327,7 +320,6 @@ header {
 .social{
     width: 20%;
 }
-.privacy{
-    padding: $spacer*3 0px;
-    
+.legal{
+    padding: $spacer*3 0px;  
 }
