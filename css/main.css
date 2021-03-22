@@ -269,13 +269,13 @@ h1 {
   padding-bottom: 64px;
 }
 
-header {
+nav {
   background-color: #AA0601;
   height: 108px;
   padding: 0 56px;
 }
 
-header img {
+nav img {
   padding: 32px;
 }
 
@@ -286,13 +286,13 @@ header img {
   padding: 0 32px;
 }
 
-.banner {
+.header {
   height: 840px;
   background-image: url("../img/banner.png");
   background-size: cover;
 }
 
-.banner div {
+.header div {
   height: inherit;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -329,10 +329,6 @@ header img {
   margin: 0px 30px;
 }
 
-.classic div img {
-  margin: 0px 8px;
-}
-
 .classic div p {
   font-style: italic;
   font-weight: bold;
@@ -352,16 +348,15 @@ header img {
   width: 540px;
   height: 472px;
   position: relative;
-  background: #FFFFFF;
+  opacity: 0.5;
 }
 
 .crossover a img {
   max-width: 540px;
   height: 472px;
-  opacity: 0.5;
 }
 
-.crossover a p {
+.crossover a span {
   color: #AA0601;
   font-size: 72px;
   line-height: 1.5;
@@ -375,7 +370,7 @@ header img {
 }
 
 .crossover a:hover {
-  background: #000;
+  opacity: 1;
 }
 
 .suggester {

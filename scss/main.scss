@@ -126,7 +126,7 @@ h1 {
     }
 }
 
-header {
+nav {
     background-color: $primary;
     height: 108px;
     padding: 0 $spacer*7;
@@ -145,7 +145,7 @@ header {
     }
 }
 
-.banner {
+.header {
     height: 840px;
     background-image: url("../img/banner.png");
     background-size: cover;
@@ -181,10 +181,6 @@ header {
         color: $primary;
         margin: 0px 30px;
 
-        img {
-            margin: 0px 8px;
-        }
-
         p {
             font-style: italic;
             font-weight: bold;
@@ -192,6 +188,7 @@ header {
             line-height: 1.5;
         }
     }
+    
 }
 
 .crossover {
@@ -205,15 +202,14 @@ header {
         width: 540px;
         height: 472px;
         position: relative;
-        background: #FFFFFF;
+        opacity: 0.5;
 
         img {
             max-width: 540px;
-            height: 472px;
-            opacity: 0.5;
+            height: 472px;            
         }
 
-        p {
+        span {
             color: $primary;
             font-size: 72px;
             line-height: 1.5;
@@ -226,7 +222,7 @@ header {
         }
 
         &:hover {
-            background: #000;
+            opacity: 1;
         }
     }
 }
